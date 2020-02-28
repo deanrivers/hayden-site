@@ -18,7 +18,9 @@ let Header = () =>{
             </div>
             <div id="blue-navbar">
                 <div id="see-more-container">
-                    <p id="see-more-text">see more ></p>
+                    <a href="#video-section-container">
+                        <p id="see-more-text">see more ></p>
+                    </a>
                 </div>
             </div>
         </div>  
