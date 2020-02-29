@@ -12,9 +12,16 @@ let Header = () =>{
                 <img id="logo" src={logo}/>
             </div>
             <div id="social-media-container">
-                <img className="social-media-icons" src={instagramIcon}/>
-                <img className="social-media-icons" src={tiktokIcon}/>
-                <img className="social-media-icons" src={youtubeIcon}/>
+                
+                    <img className="social-media-icons" src={instagramIcon}/>
+                
+                <a target="_blank" href="https://www.tiktok.com/@hay10en?lang=en">
+                    <img className="social-media-icons" src={tiktokIcon}/>
+                </a>
+                <a target="_blank" href="https://www.youtube.com/watch?v=JbMm_bIrQGA&feature=youtu.be">
+                    <img className="social-media-icons" src={youtubeIcon}/>
+                </a>
+                
             </div>
             <div id="blue-navbar">
                 <div id="see-more-container">
