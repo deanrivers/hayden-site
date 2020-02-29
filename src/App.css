@@ -39,12 +39,12 @@ h1{
   display: flex;
   justify-content: center;
   align-self: center;
-  width: fit-content;
 }
 
 #logo{
   align-items: center;
   width: 65%;
+  max-width: 250px;
 }
 #social-media-container{
   display: flex;
