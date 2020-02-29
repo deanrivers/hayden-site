@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/hayden-site/static/css/main.fec3543f.chunk.css",
+    "main.js": "/hayden-site/static/js/main.25c27379.chunk.js",
+    "main.js.map": "/hayden-site/static/js/main.25c27379.chunk.js.map",
+    "runtime-main.js": "/hayden-site/static/js/runtime-main.94d93194.js",
+    "runtime-main.js.map": "/hayden-site/static/js/runtime-main.94d93194.js.map",
+    "static/js/2.acbfbae2.chunk.js": "/hayden-site/static/js/2.acbfbae2.chunk.js",
+    "static/js/2.acbfbae2.chunk.js.map": "/hayden-site/static/js/2.acbfbae2.chunk.js.map",
+    "index.html": "/hayden-site/index.html",
+    "precache-manifest.42cfb2ac6694e4f7cf10fc63eadfa368.js": "/hayden-site/precache-manifest.42cfb2ac6694e4f7cf10fc63eadfa368.js",
+    "service-worker.js": "/hayden-site/service-worker.js",
+    "static/css/main.fec3543f.chunk.css.map": "/hayden-site/static/css/main.fec3543f.chunk.css.map",
+    "static/js/2.acbfbae2.chunk.js.LICENSE.txt": "/hayden-site/static/js/2.acbfbae2.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/hayden-site/static/media/header.cdee1706.jpg",
+    "static/media/ig.png": "/hayden-site/static/media/ig.097b7749.png",
+    "static/media/logo.svg": "/hayden-site/static/media/logo.5d5d9eef.svg",
+    "static/media/tiktok.png": "/hayden-site/static/media/tiktok.7f26e1a2.png",
+    "static/media/youtube.png": "/hayden-site/static/media/youtube.8170c0b0.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.94d93194.js",
+    "static/js/2.acbfbae2.chunk.js",
+    "static/css/main.fec3543f.chunk.css",
+    "static/js/main.25c27379.chunk.js"
+  ]
+}
