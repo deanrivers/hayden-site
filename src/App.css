@@ -39,6 +39,7 @@ h1{
   display: flex;
   justify-content: center;
   align-self: center;
+  width: fit-content;
 }
 
 #logo{
