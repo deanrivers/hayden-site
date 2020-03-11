@@ -1,27 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "061e7d08c19b7a951e6b095d62a87f7c",
+    "revision": "a33ec331070296cecabbacaa61f6bb13",
     "url": "/hayden-site/index.html"
   },
   {
-    "revision": "613b9d855e9fd4b922ad",
-    "url": "/hayden-site/static/css/main.71caf0a1.chunk.css"
+    "revision": "9be76a8e1cc090f6dfff",
+    "url": "/hayden-site/static/css/main.01fade8d.chunk.css"
   },
   {
-    "revision": "b5e814acb4027e7357cd",
-    "url": "/hayden-site/static/js/2.acbfbae2.chunk.js"
+    "revision": "45cd96c923568ea763aa",
+    "url": "/hayden-site/static/js/2.c5b003eb.chunk.js"
   },
   {
     "revision": "99bd0487192ec9e7d9ee8fbbd91ee444",
-    "url": "/hayden-site/static/js/2.acbfbae2.chunk.js.LICENSE.txt"
+    "url": "/hayden-site/static/js/2.c5b003eb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "613b9d855e9fd4b922ad",
-    "url": "/hayden-site/static/js/main.25c27379.chunk.js"
+    "revision": "9be76a8e1cc090f6dfff",
+    "url": "/hayden-site/static/js/main.95590acc.chunk.js"
   },
   {
     "revision": "05222e02ad7a232f5095",
     "url": "/hayden-site/static/js/runtime-main.94d93194.js"
+  },
+  {
+    "revision": "75e2b5e17e4c8a3d3dc064ca07beb74c",
+    "url": "/hayden-site/static/media/about_me.75e2b5e1.svg"
+  },
+  {
+    "revision": "5e8f5601299f7efe556a23c3dd927694",
+    "url": "/hayden-site/static/media/contact.5e8f5601.svg"
+  },
+  {
+    "revision": "8fabf21c41b986ae6a51f595392a1523",
+    "url": "/hayden-site/static/media/dots_group.8fabf21c.svg"
   },
   {
     "revision": "cdee1706ed2d63dda6dce8970004d789",
