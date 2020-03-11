@@ -4,6 +4,8 @@ import tiktokIcon from '../assets/tiktok.png'
 import youtubeIcon from '../assets/youtube.png'
 import logo from '../assets/logo.png'
 
+import dotsImage from '../assets/dots_group.svg'
+
 
 let Header = () =>{
     return(
@@ -11,10 +13,9 @@ let Header = () =>{
             <div id="logo-container">
                 <img id="logo" src={logo}/>
             </div>
-            <div id="social-media-container">
-                
-                    <img className="social-media-icons" src={instagramIcon}/>
-                
+            
+            <div id="social-media-container">                
+                    <img className="social-media-icons" src={instagramIcon}/>                
                 <a target="_blank" href="https://www.tiktok.com/@hay10en?lang=en">
                     <img className="social-media-icons" src={tiktokIcon}/>
                 </a>
