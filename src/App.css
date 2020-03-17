@@ -89,6 +89,7 @@ h1{
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 
 }
 
@@ -103,6 +104,8 @@ h1{
   background-color: #FF8900;
   transform: rotate(90deg);
   color: white;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /* video section */
@@ -252,3 +255,16 @@ textarea{
   }
 }
 
+/* contact button */
+#contact-button-container{
+  text-align: right;
+}
+
+#contact-button{
+  color: #FF8900;
+  border: none;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  outline: none;
+}

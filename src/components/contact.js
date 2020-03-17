@@ -24,17 +24,18 @@ class Contact extends Component{
                     <img class="svg-header" src={contactImage}/>
                 </div>
 
-
                 <div id="form-container">
                     <div id="input-container">
                         <input type="text" placeholder="name" name="name"/>
                         <input type="text" placeholder="email" name="email"/>
                     </div>
-                    
                         <textarea placeholder="message"/>
-                    
-                    
                 </div>
+
+                <div id="contact-button-container">
+                    <button id="contact-button">send >>></button>
+                </div>
+                
 
   
 
