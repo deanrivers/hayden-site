@@ -14,8 +14,10 @@ let Header = () =>{
                 <img id="logo" src={logo}/>
             </div>
             
-            <div id="social-media-container">                
-                    <img className="social-media-icons" src={instagramIcon}/>                
+            <div id="social-media-container">
+                <a target="_blank" href="https://instagram.com">
+                    <img className="social-media-icons" src={instagramIcon}/>
+                </a>                                
                 <a target="_blank" href="https://www.tiktok.com/@hay10en?lang=en">
                     <img className="social-media-icons" src={tiktokIcon}/>
                 </a>
@@ -26,9 +28,9 @@ let Header = () =>{
             </div>
             <div id="blue-navbar">
                 <div id="see-more-container">
-                    <a href="#video-section-container">
+                    {/* <a href="#video-section-container">
                         <p id="see-more-text">see more ></p>
-                    </a>
+                    </a> */}
                 </div>
             </div>
         </div>  
