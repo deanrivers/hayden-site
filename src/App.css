@@ -118,8 +118,9 @@ h1{
   flex-direction: column;
   flex-wrap: wrap;
   font-size: 2em;
+  
 
-  margin-bottom: 6%;
+  /* margin-bottom: 6%; */
   padding: 15%;
   padding-top: 0%;
   padding-bottom: 0;
@@ -131,7 +132,7 @@ h1{
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 5%;
+  margin-top: 10%;
   margin-bottom: 0%;
 }
 
@@ -174,7 +175,8 @@ h1{
 /* contact */
 #main-contact-container{
   padding: 0 15% 0 15%;
-  margin-bottom: 10%;
+  margin-top: 10%;
+  /* margin-bottom: 10%; */
 }
 
 .svg-container{
@@ -267,4 +269,53 @@ textarea{
   font-size: 1em;
   cursor: pointer;
   outline: none;
+}
+
+/* navbar */
+#navbar-list{
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  position: fixed;
+  top: 0;
+  background-color: #FF8900;
+  background-color: #73D3D2;
+  background-color: rgb(104, 196, 195);
+  background-color: white;
+  z-index: 100;
+  border-bottom: 0px solid #FF8900;
+  transition: 0.2s ease-in-out;
+}
+
+#navbar-list:hover{
+  /* border-bottom: 5px solid #FF8900; */
+}
+
+#navbar-list li{
+  list-style: none;
+  margin-right: 5%;
+  text-decoration: none;
+}
+
+
+
+#navbar-list a{
+  color: white;
+  color: #FF8900;
+  opacity: 0.6;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+
+#navbar-list a:hover{
+  opacity: 1;
+}
+
+.activeRoute{
+  color: #FF8900;
+  opacity: 1 !important;
 }
