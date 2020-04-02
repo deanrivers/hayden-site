@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/hayden-site/precache-manifest.ab3eb3483ebb09f4c2ede24ade448368.js"
+  "/hayden-site/precache-manifest.fd4e52bbf0cf7495ebd184617735bebf.js"
 );
 
 self.addEventListener('message', (event) => {
