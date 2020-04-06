@@ -26,6 +26,10 @@ class Nav extends Component{
             sliderContainer.classList.add('slide-in')
             sliderContainer.classList.remove('slide-out')
             sliderContainer.classList.remove('slide-none')
+            document.getElementsByTagName('body')[0].setAttribute("style", "overflow-y:hidden;");
+
+            //overflow hidden body
+
             
             
             
@@ -33,6 +37,7 @@ class Nav extends Component{
             //setting 2
             sliderContainer.classList.remove('slide-in')
             sliderContainer.classList.add('slide-out')
+            document.getElementsByTagName('body')[0].setAttribute("style", "overflow-y:auto;");
 
             
             
@@ -82,8 +87,8 @@ class Nav extends Component{
                         <HamburgerMenu
                             isOpen={this.state.open}
                             menuClicked={this.handleClick}
-                            width={18}
-                            height={15}
+                            width={25}
+                            height={20}
                             strokeWidth={1}
                             rotate={0}
                             // color='#73D3D2'

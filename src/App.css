@@ -269,6 +269,7 @@ textarea{
   font-size: 1em;
   cursor: pointer;
   outline: none;
+  background: none;
 }
 
 /* navbar */
@@ -331,6 +332,14 @@ textarea{
   background: #99faf9;
 }
 
+.hamburger-container > div{
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100% !important;
+  height: 100% !important; */
+}
+
 .ham-nav-items{
   display: none;
   position: absolute;
@@ -345,20 +354,7 @@ textarea{
   z-index: 100;
   
 }
-.hamburger-slide-container-default{
-  
-  position: absolute;
-  top: 0;
-  z-index: 100;
-  margin: 0 auto;
-  padding: 0;
-  height: 100%;
-  background: #aef7ff;
-  right: -100%;
-  width: 100%;
-  z-index: 100;
-  
-}
+
 
 .slidebar-list-container{
   display: flex;
@@ -401,11 +397,13 @@ textarea{
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.3s ease-in-out;
 }
 
 .slidebar-menu-items a{
   height: 100%;
   width: 100%;
+  
 }
 
 
@@ -434,6 +432,10 @@ textarea{
 
 
 @media only screen and (max-width: 600px){
+    #main-contact-container{
+      margin-top: 0;
+    }
+
     .hamburger-container{
       display: flex;
       justify-content: center;
@@ -448,7 +450,7 @@ textarea{
     }
 }
 @media only screen and (min-width: 600px){
-    .hamburger-slide-container{
+    #hamburger-slide-container, .slidebar-list-container{
       display: none;
     }
 
