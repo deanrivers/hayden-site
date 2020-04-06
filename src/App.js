@@ -13,6 +13,9 @@ import Bottom from './components/bottom'
 import Nav from './components/nav'
 
 let App = ()=>{
+  var str = {0:'/hayden-site',1:''}
+  var choice = str[0]
+
   return (
     <div className="App">
       <Router>
@@ -20,10 +23,10 @@ let App = ()=>{
         <Route
           render={()=>(
             <Switch>
-              <Route path="/home" component={Header} exact/>
-              <Route path="/portfolio" component={Video} exact/>
-              <Route path="/contact" component={Contact} exact/>
-              <Route path="" component={Header}/>
+              <Route path={choice+"/home"} component={Header} exact/>
+              <Route path={choice+"/portfolio"} component={Video} />
+              <Route path={choice+"/contact"} component={Contact} />
+              <Route path={choice+"/"} component={Header}/>
             </Switch>
           )}
         />

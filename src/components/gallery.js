@@ -15,7 +15,6 @@ class Gallery extends Component{
                 'https://data.whicdn.com/images/327014997/original.jpg?t=1550766960',
                 'https://data.whicdn.com/images/327014997/original.jpg?t=1550766960',
                 'https://data.whicdn.com/images/327014997/original.jpg?t=1550766960',
-
             ]
         }
     }
@@ -23,6 +22,8 @@ class Gallery extends Component{
     render(){
         return(
             <div id="gallery-main-container">
+                <h1>REAL CONTENT<span className="orange-text">.</span></h1>
+                <h1><span className="orange-text">REAL EVIDENCE</span>.</h1>
                 {this.state.imagePaths.map( (item,index)=>{
                     return(
                         <Image src={this.state.imagePaths[index]}/>

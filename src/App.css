@@ -278,14 +278,14 @@ textarea{
   justify-content: flex-end;
   width: 100%;
   margin: 0 auto;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   position: fixed;
   top: 0;
-  background-color: #FF8900;
+  /* background-color: #FF8900;
   background-color: #73D3D2;
   background-color: rgb(104, 196, 195);
-  background-color: white;
+  background-color: white; */
   z-index: 100;
   border-bottom: 0px solid #FF8900;
   transition: 0.2s ease-in-out;
@@ -318,4 +318,87 @@ textarea{
 .activeRoute{
   color: #FF8900;
   opacity: 1 !important;
+}
+
+/* hamburger menu */
+.hamburger-container{
+  display: none;
+  position: absolute;
+  top: 3%;
+  right: 7%;
+  z-index: 500;
+  padding: 3%;
+  /* border: 2px solid #FF8900; */
+  border-radius: 3px;
+  background: #affffe;
+}
+
+.hamburger-slide-container{
+  position: absolute;
+  /* display: none; */
+  top: 0;
+  z-index: 100;
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  background: #aef7ff;
+  right: 0;
+  width: 100%;
+  z-index: 100;
+  
+}
+
+.slidebar-list-container{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+  background: darkgrey;
+}
+.slide-in{
+  animation: slide-in ease-in-out;
+  animation-duration: 2s;
+}
+
+#slidebar-list{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.slidebar-menu-items{
+  height: 100%;
+  width: 100%;
+  background: #affffe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.slidebar-menu-items:hover{
+  background-color: #ccc;
+}
+
+@keyframes slide-in{
+  0%{
+    right: -5%;
+  }
+  100%{
+    right:0
+  }
+}
+
+
+@media only screen and (max-width: 600px){
+    .hamburger-container{
+      display: block;
+    }
+
+    #navbar-list{
+      display: none;
+    }
 }
