@@ -324,7 +324,7 @@ textarea{
 /* hamburger menu */
 .hamburger-container{
   display: none;
-  position: absolute;
+  position: fixed;
   top: 3%;
   right: 7%;
   z-index: 500;
@@ -342,7 +342,7 @@ textarea{
 
 .ham-nav-items{
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 100;
   margin: 0 auto;
