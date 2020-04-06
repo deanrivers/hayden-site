@@ -18,19 +18,47 @@ class Nav extends Component{
         });
 
         // grab slider container
-        var sliderContainer = document.getElementsByClassName('hamburger-slide-container')[0]
+        var sliderContainer = document.getElementsByClassName('ham-nav-items')[0]
 
+        //handle click of burger menu
         if(!this.state.open){
             //setting 1
             sliderContainer.classList.add('slide-in')
             sliderContainer.classList.remove('slide-out')
+            sliderContainer.classList.remove('slide-none')
+            
+            
+            
         } else if(this.state.open){
             //setting 2
             sliderContainer.classList.remove('slide-in')
             sliderContainer.classList.add('slide-out')
+
+            
+            
         } else{
             console.log('....um')
         }
+
+        //listen to click of navbar iterms
+        var navItems = document.getElementsByClassName('Nav_Link')
+        var hamburger = document.getElementsByClassName('hamburger-container')[0]
+
+
+
+        for(var i = 0;i<navItems.length;i++){
+            navItems[i].addEventListener('click', function(){
+                // sliderContainer.classList.remove('slide-in')
+                // sliderContainer.classList.add('slide-out')
+                // this.handleClick()
+                hamburger.click()
+                console.log('click')
+
+
+            })
+        }
+        
+
     }
 
     render(){
@@ -64,7 +92,7 @@ class Nav extends Component{
                         />
 
                     </div>
-                <div className="hamburger-slide-container">
+                <div id="hamburger-slide-container" className="ham-nav-items">
                     <div className="slidebar-list-container">
                         <div id="slidebar-list">
                             <div className="slidebar-menu-items"><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/home"}>Home</NavLink></div>                        

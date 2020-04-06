@@ -13,7 +13,7 @@ let Video = () =>{
                     </div>
 
                     <div id="iframe-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/JbMm_bIrQGA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/JbMm_bIrQGA" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                     <Gallery/>                
                 </div>

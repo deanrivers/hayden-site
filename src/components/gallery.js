@@ -1,7 +1,7 @@
 
 import Image from './image'
 import React, { Component } from 'react'
-import FadeIn from 'react-fade-in'
+
 
 class Gallery extends Component{
     
@@ -29,8 +29,9 @@ class Gallery extends Component{
                 <h1>REAL CONTENT<span className="orange-text">.</span></h1>
                 <h1><span className="orange-text">REAL EVIDENCE</span>.</h1>
                 {this.state.imagePaths.map( (item,index)=>{
+                    
                     return(
-                        <Image src={this.state.imagePaths[index]}/>
+                        <Image key={index} src={this.state.imagePaths[index]} alt={index}/>
                     )
                 })}
             </div>

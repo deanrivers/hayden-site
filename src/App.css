@@ -333,9 +333,23 @@ textarea{
   background: #99faf9;
 }
 
-.hamburger-slide-container{
+.ham-nav-items{
+  display: none;
   position: absolute;
-  /* display: none; */
+  top: 0;
+  z-index: 100;
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  background: #aef7ff;
+  right: -100%;
+  width: 100%;
+  z-index: 100;
+  
+}
+.hamburger-slide-container-default{
+  
+  position: absolute;
   top: 0;
   z-index: 100;
   margin: 0 auto;
@@ -357,11 +371,19 @@ textarea{
 }
 .slide-in{
   right: 0;
+  display: block;
   animation: slide-in ease-in-out;
   animation-duration: 0.5s;
 }
 
+.slide-none{
+  display: none;
+}
+
+
+
 .slide-out{
+  
   animation: slide-out ease-in-out;
   animation-duration: 0.5s;
 }

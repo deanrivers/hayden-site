@@ -1,15 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 
 import Header from './components/header'
 import Video from './components/video'
-import Gallery from './components/gallery'
+
 import Contact from './components/contact'
-import Bottom from './components/bottom'
+
 import Nav from './components/nav'
 
 let App = ()=>{

@@ -3,7 +3,7 @@ import React from 'react'
 let Image = (props) =>{
     return(
         <div className="image-container">
-            <img className="image-children" src={props.src}></img>
+            <img className="image-children" src={props.src} alt={props.alt}></img>
         </div>
     )
 }

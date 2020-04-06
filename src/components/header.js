@@ -4,9 +4,9 @@ import tiktokIcon from '../assets/tiktok.png'
 import youtubeIcon from '../assets/youtube.png'
 import logo from '../assets/logo.png'
 
-import dotsImage from '../assets/dots_group.svg'
+
 import FadeIn from 'react-fade-in'
-import HamburgerMenu from 'react-hamburger-menu'
+
 
 
 
@@ -32,21 +32,21 @@ class Header extends Component{
                 <div id="main-header-container">
                         
                         <div id="logo-container">
-                            <img id="logo" src={logo}/>
+                            <img id="logo" src={logo} alt="logo"/>
                         </div>
                         
                         <div id="social-media-container">
-                            <a target="_blank" href="https://instagram.com">
-                                <img className="social-media-icons" src={instagramIcon}/>
+                            <a target="_blank" rel="noopener noreferrer" href="https://instagram.com">
+                                <img className="social-media-icons" src={instagramIcon} alt="ig"/>
                             </a>
                                                             
-                            <a target="_blank" href="https://www.tiktok.com/@hay10en?lang=en">
-                                <img className="social-media-icons" src={tiktokIcon}/>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.tiktok.com/@hay10en?lang=en">
+                                <img className="social-media-icons" src={tiktokIcon} alt="tiktok"/>
                             </a>
                             
                             
-                            <a target="_blank" href="https://www.youtube.com/watch?v=JbMm_bIrQGA&feature=youtu.be">
-                                <img className="social-media-icons" src={youtubeIcon}/>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=JbMm_bIrQGA&feature=youtu.be">
+                                <img className="social-media-icons" src={youtubeIcon} alt="yt"/>
                             </a>
                         </div>
                         <div id="blue-navbar">
