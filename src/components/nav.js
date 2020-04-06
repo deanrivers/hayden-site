@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 import {NavLink} from 'react-router-dom'
 import HamburgerMenu from 'react-hamburger-menu'
+import FadeIn from 'react-fade-in'
+import $ from 'jquery'
 
 class Nav extends Component{
 
@@ -10,57 +12,51 @@ class Nav extends Component{
             open:false,
         }
         this.handleClick = this.handleClick.bind(this)
+        this.menuItemClicked = this.menuItemClicked.bind(this)
     }
 
     handleClick(){
+        console.log('handle click')
         this.setState({
             open: !this.state.open
         });
 
         // grab slider container
         var sliderContainer = document.getElementsByClassName('ham-nav-items')[0]
-
+        var hamburger = document.getElementById('hamburger')
         //handle click of burger menu
         if(!this.state.open){
             //setting 1
             sliderContainer.classList.add('slide-in')
             sliderContainer.classList.remove('slide-out')
             sliderContainer.classList.remove('slide-none')
-            document.getElementsByTagName('html')[0].setAttribute("style", "overflow-y:hidden;");
+            document.getElementsByTagName('html')[0].setAttribute("style", "overflow-y:hidden;")
 
-            //overflow hidden html
+            //hamburger animation forward
+            hamburger.classList.add('hamburger-circle')
+            hamburger.classList.remove('hamburger-square')
 
             
-            
-            
+
         } else if(this.state.open){
             //setting 2
             sliderContainer.classList.remove('slide-in')
             sliderContainer.classList.add('slide-out')
             document.getElementsByTagName('html')[0].setAttribute("style", "overflow-y:auto;");
+
+            //hamburger animation
+            hamburger.classList.remove('hamburger-circle')
+            hamburger.classList.add('hamburger-square')
         } else{
             console.log('....um')
         }
-
         //listen to click of navbar iterms
         var navItems = document.getElementsByClassName('Nav_Link')
         var hamburger = document.getElementsByClassName('hamburger-container')[0]
+    }
 
-
-
-        for(var i = 0;i<navItems.length;i++){
-            navItems[i].addEventListener('click', function(){
-                // sliderContainer.classList.remove('slide-in')
-                // sliderContainer.classList.add('slide-out')
-                // this.handleClick()
-                hamburger.click()
-                console.log('click')
-
-
-            })
-        }
-        
-
+    menuItemClicked(){
+        this.handleClick()
     }
 
     render(){
@@ -68,9 +64,11 @@ class Nav extends Component{
         var str = {0:'/hayden-site',1:''}
         var choice = str[1]
 
+    
+
         return(
 
-             
+
             
             <div id="navbar-container">
             
@@ -80,7 +78,7 @@ class Nav extends Component{
                     <li><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/portfolio"}>Portfolio</NavLink></li>                        
                     <li><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/contact"}>Contact</NavLink></li>                        
                 </ul>
-                <div className="hamburger-container">
+                <div id="hamburger" className="hamburger-container">
                         <HamburgerMenu
                             isOpen={this.state.open}
                             menuClicked={this.handleClick}
@@ -98,10 +96,11 @@ class Nav extends Component{
                 <div id="hamburger-slide-container" className="ham-nav-items">
                     <div className="slidebar-list-container">
                         <div id="slidebar-list">
-                            <div className="slidebar-menu-items"><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/home"}>Home</NavLink></div>                        
-                            <div className="slidebar-menu-items"><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/booking"}>Booking</NavLink></div>                        
-                            <div className="slidebar-menu-items"><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/portfolio"}>Portfolio</NavLink></div>                        
-                            <div className="slidebar-menu-items"><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/contact"}>Contact</NavLink></div>                        
+                                <div onClick={this.menuItemClicked} className="slidebar-menu-items"><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/home"}>Home</NavLink></div>                        
+                                <div onClick={this.menuItemClicked} className="slidebar-menu-items"><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/booking"}>Booking</NavLink></div>                        
+                                <div onClick={this.menuItemClicked} className="slidebar-menu-items"><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/portfolio"}>Portfolio</NavLink></div>                        
+                                <div onClick={this.menuItemClicked} className="slidebar-menu-items"><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/contact"}>Contact</NavLink></div>                        
+                            
                         </div>
                     </div>
                 </div>

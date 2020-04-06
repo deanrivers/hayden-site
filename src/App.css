@@ -121,9 +121,9 @@ h1{
   
 
   /* margin-bottom: 6%; */
-  padding: 15%;
-  padding-top: 0%;
-  padding-bottom: 0;
+  padding: 20%;
+  padding-top: 5%;
+  
 
 }
 
@@ -174,9 +174,12 @@ h1{
 
 /* contact */
 #main-contact-container{
-  padding: 0 15% 0 15%;
-  margin-top: 10%;
-  /* margin-bottom: 10%; */
+    /* padding: 0 15% 0 15%; */
+    padding: 20%;
+    /* margin-top: 10%; */
+    padding-top: 10%;
+    padding-bottom: 0;
+    margin-bottom: 10%;
 }
 
 .svg-container{
@@ -275,7 +278,7 @@ textarea{
 /* navbar */
 #navbar-list{
   padding: 0;
-  display: flex;
+  display: none !important;
   justify-content: flex-end;
   width: 100%;
   margin: 0 auto;
@@ -323,13 +326,22 @@ textarea{
 
 /* hamburger menu */
 .hamburger-container{
-  display: none;
+  display: block;
   position: fixed;
   top: 3%;
   right: 7%;
   z-index: 500;
-  border-radius: 3px;
-  background: #99faf9;
+  /* border-radius: 3px; */
+  background: #ff6200;
+  background: #aef7ff;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  z-index: 1000;
 }
 
 .hamburger-container > div{
@@ -359,15 +371,15 @@ textarea{
 .slidebar-list-container{
   display: flex;
   justify-content: center;
-  height: 100%;
+  /* height: 100%; */
   flex-direction: column;
-  background: darkgrey;
+  /* background: #99faf9; */
 }
 .slide-in{
   right: 0;
   display: block;
   animation: slide-in ease-in-out;
-  animation-duration: 0.5s;
+  animation-duration: 0.2s;
 }
 
 .slide-none{
@@ -377,9 +389,9 @@ textarea{
 
 
 .slide-out{
-  
+  display: block;
   animation: slide-out ease-in-out;
-  animation-duration: 0.5s;
+  animation-duration: 0.2s;
 }
 
 #slidebar-list{
@@ -388,12 +400,14 @@ textarea{
   align-items: center;
   flex-direction: column;
   height: 100%;
+  text-align: center;
+  margin-top: 20%;
 }
 
 .slidebar-menu-items{
-  height: 100%;
+  /* height: 100%; */
   width: 100%;
-  background: #99faf9;
+  /* background: #99faf9; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -412,6 +426,44 @@ textarea{
   background-color: #c4fffe;
 }
 
+.hamburger-circle{
+  border-radius: 100px;
+  animation: toCircle ease-in-out;
+  animation-duration: 0.2s;
+  background-color: #d9fbff;
+}
+
+.hamburger-square{
+  border-radius: 0px;
+  animation: toSquare ease-in-out;
+  animation-duration: 0.2s;
+  background-color: #aef7ff;
+}
+
+/* hamburger icon */
+@keyframes toCircle{
+  0%{
+    border-radius: 0px;
+    background-color: #aef7ff;
+  }
+  100%{
+    border-radius: 30px;
+    background-color: #d9fbff;
+  }
+}
+
+@keyframes toSquare{
+  0%{
+    border-radius: 30px;
+    background-color: #d9fbff;
+  }
+  100%{
+    border-radius: 0px;
+    background-color: #aef7ff;
+  }
+}
+
+/* nav slide */
 @keyframes slide-in{
   0%{
     right: -100%;
@@ -451,7 +503,7 @@ textarea{
 }
 @media only screen and (min-width: 600px){
     #hamburger-slide-container, .slidebar-list-container{
-      display: none;
+      /* display: none; */
     }
 
     #navbar-list{

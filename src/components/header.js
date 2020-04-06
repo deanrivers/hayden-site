@@ -23,42 +23,37 @@ class Header extends Component{
     
 
     render(){
-
-
-        
         return(
-
-            <FadeIn>
-                <div id="main-header-container">
-                        
-                        <div id="logo-container">
-                            <img id="logo" src={logo} alt="logo"/>
-                        </div>
-                        
-                        <div id="social-media-container">
-                            <a target="_blank" rel="noopener noreferrer" href="https://instagram.com">
-                                <img className="social-media-icons" src={instagramIcon} alt="ig"/>
-                            </a>
-                                                            
-                            <a target="_blank" rel="noopener noreferrer" href="https://www.tiktok.com/@hay10en?lang=en">
-                                <img className="social-media-icons" src={tiktokIcon} alt="tiktok"/>
-                            </a>
-                            
-                            
-                            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=JbMm_bIrQGA&feature=youtu.be">
-                                <img className="social-media-icons" src={youtubeIcon} alt="yt"/>
-                            </a>
-                        </div>
-                        <div id="blue-navbar">
-                            <div id="see-more-container">
-                                {/* <a href="#video-section-container">
-                                    <p id="see-more-text">see more ></p>
-                                </a> */}
-                            </div>
-                        </div>
+            <div id="main-header-container">
                     
-                </div>  
-            </FadeIn>
+                    <div id="logo-container">
+                        <img id="logo" src={logo} alt="logo"/>
+                    </div>
+                    
+                    <div id="social-media-container">
+                        <a target="_blank" rel="noopener noreferrer" href="https://instagram.com">
+                            <img className="social-media-icons" src={instagramIcon} alt="ig"/>
+                        </a>
+                                                        
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.tiktok.com/@hay10en?lang=en">
+                            <img className="social-media-icons" src={tiktokIcon} alt="tiktok"/>
+                        </a>
+                        
+                        
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=JbMm_bIrQGA&feature=youtu.be">
+                            <img className="social-media-icons" src={youtubeIcon} alt="yt"/>
+                        </a>
+                    </div>
+                    <div id="blue-navbar">
+                        <div id="see-more-container">
+                            {/* <a href="#video-section-container">
+                                <p id="see-more-text">see more ></p>
+                            </a> */}
+                        </div>
+                    </div>
+                
+            </div>  
+            
         )
     }
     
