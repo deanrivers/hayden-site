@@ -1,30 +1,28 @@
 {
   "files": {
-    "main.css": "/hayden-site/static/css/main.3a17ce2e.chunk.css",
-    "main.js": "/hayden-site/static/js/main.803691bb.chunk.js",
-    "main.js.map": "/hayden-site/static/js/main.803691bb.chunk.js.map",
+    "main.css": "/hayden-site/static/css/main.20cf7493.chunk.css",
+    "main.js": "/hayden-site/static/js/main.00e0de73.chunk.js",
+    "main.js.map": "/hayden-site/static/js/main.00e0de73.chunk.js.map",
     "runtime-main.js": "/hayden-site/static/js/runtime-main.94d93194.js",
     "runtime-main.js.map": "/hayden-site/static/js/runtime-main.94d93194.js.map",
-    "static/js/2.434ff669.chunk.js": "/hayden-site/static/js/2.434ff669.chunk.js",
-    "static/js/2.434ff669.chunk.js.map": "/hayden-site/static/js/2.434ff669.chunk.js.map",
+    "static/js/2.5ed526e3.chunk.js": "/hayden-site/static/js/2.5ed526e3.chunk.js",
+    "static/js/2.5ed526e3.chunk.js.map": "/hayden-site/static/js/2.5ed526e3.chunk.js.map",
     "index.html": "/hayden-site/index.html",
-    "precache-manifest.8fea091d778b5c785ad12d13330204ea.js": "/hayden-site/precache-manifest.8fea091d778b5c785ad12d13330204ea.js",
+    "precache-manifest.1cf43e1ea8603af7a7b87526f374f799.js": "/hayden-site/precache-manifest.1cf43e1ea8603af7a7b87526f374f799.js",
     "service-worker.js": "/hayden-site/service-worker.js",
-    "static/css/main.3a17ce2e.chunk.css.map": "/hayden-site/static/css/main.3a17ce2e.chunk.css.map",
-    "static/js/2.434ff669.chunk.js.LICENSE.txt": "/hayden-site/static/js/2.434ff669.chunk.js.LICENSE.txt",
+    "static/css/main.20cf7493.chunk.css.map": "/hayden-site/static/css/main.20cf7493.chunk.css.map",
+    "static/js/2.5ed526e3.chunk.js.LICENSE.txt": "/hayden-site/static/js/2.5ed526e3.chunk.js.LICENSE.txt",
     "static/media/about_me.svg": "/hayden-site/static/media/about_me.75e2b5e1.svg",
     "static/media/contact.svg": "/hayden-site/static/media/contact.5e8f5601.svg",
-    "static/media/dots_group.svg": "/hayden-site/static/media/dots_group.8fabf21c.svg",
     "static/media/App.css": "/hayden-site/static/media/header.cdee1706.jpg",
     "static/media/ig.png": "/hayden-site/static/media/ig.097b7749.png",
-    "static/media/logo.svg": "/hayden-site/static/media/logo.5d5d9eef.svg",
     "static/media/tiktok.png": "/hayden-site/static/media/tiktok.7f26e1a2.png",
     "static/media/youtube.png": "/hayden-site/static/media/youtube.8170c0b0.png"
   },
   "entrypoints": [
     "static/js/runtime-main.94d93194.js",
-    "static/js/2.434ff669.chunk.js",
-    "static/css/main.3a17ce2e.chunk.css",
-    "static/js/main.803691bb.chunk.js"
+    "static/js/2.5ed526e3.chunk.js",
+    "static/css/main.20cf7493.chunk.css",
+    "static/js/main.00e0de73.chunk.js"
   ]
 }
