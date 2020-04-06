@@ -86,7 +86,8 @@ class Nav extends Component{
                             height={15}
                             strokeWidth={1}
                             rotate={0}
-                            color='#73D3D2'
+                            // color='#73D3D2'
+                            color='black'
                             borderRadius={0}
                             animationDuration={0.5}
                         />

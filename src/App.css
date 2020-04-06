@@ -327,8 +327,6 @@ textarea{
   top: 3%;
   right: 7%;
   z-index: 500;
-  padding: 3%;
-  /* border: 2px solid #FF8900; */
   border-radius: 3px;
   background: #99faf9;
 }
@@ -437,7 +435,12 @@ textarea{
 
 @media only screen and (max-width: 600px){
     .hamburger-container{
-      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      z-index: 1000;
     }
 
     #navbar-list{
