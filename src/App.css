@@ -303,7 +303,7 @@ textarea{
 
 
 
-#navbar-list a{
+#navbar-list a, .slidebar-menu-items a{
   color: white;
   color: #FF8900;
   opacity: 0.6;
@@ -330,7 +330,7 @@ textarea{
   padding: 3%;
   /* border: 2px solid #FF8900; */
   border-radius: 3px;
-  background: #affffe;
+  background: #99faf9;
 }
 
 .hamburger-slide-container{
@@ -342,7 +342,7 @@ textarea{
   padding: 0;
   height: 100%;
   background: #aef7ff;
-  right: 0;
+  right: -100%;
   width: 100%;
   z-index: 100;
   
@@ -356,8 +356,14 @@ textarea{
   background: darkgrey;
 }
 .slide-in{
+  right: 0;
   animation: slide-in ease-in-out;
-  animation-duration: 2s;
+  animation-duration: 0.5s;
+}
+
+.slide-out{
+  animation: slide-out ease-in-out;
+  animation-duration: 0.5s;
 }
 
 #slidebar-list{
@@ -371,24 +377,38 @@ textarea{
 .slidebar-menu-items{
   height: 100%;
   width: 100%;
-  background: #affffe;
+  background: #99faf9;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.slidebar-menu-items a{
+  height: 100%;
+  width: 100%;
+}
+
 
 
 .slidebar-menu-items:hover{
-  background-color: #ccc;
+  background-color: #c4fffe;
 }
 
 @keyframes slide-in{
   0%{
-    right: -5%;
+    right: -100%;
   }
   100%{
     right:0
+  }
+}
+
+@keyframes slide-out{
+  0%{
+    right: 0;
+  }
+  100%{
+    right:-100%
   }
 }
 
@@ -400,5 +420,14 @@ textarea{
 
     #navbar-list{
       display: none;
+    }
+}
+@media only screen and (min-width: 600px){
+    .hamburger-slide-container{
+      display: none;
+    }
+
+    #navbar-list{
+      display: flex;
     }
 }

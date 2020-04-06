@@ -12,7 +12,14 @@ import HamburgerMenu from 'react-hamburger-menu'
 
 class Header extends Component{
 
-    
+    constructor(props){
+        super(props)
+
+        this.state = {
+
+        }
+
+    }
     
 
     render(){
@@ -31,7 +38,8 @@ class Header extends Component{
                         <div id="social-media-container">
                             <a target="_blank" href="https://instagram.com">
                                 <img className="social-media-icons" src={instagramIcon}/>
-                            </a>                                
+                            </a>
+                                                            
                             <a target="_blank" href="https://www.tiktok.com/@hay10en?lang=en">
                                 <img className="social-media-icons" src={tiktokIcon}/>
                             </a>

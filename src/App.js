@@ -14,7 +14,7 @@ import Nav from './components/nav'
 
 let App = ()=>{
   var str = {0:'/hayden-site',1:''}
-  var choice = str[0]
+  var choice = str[1]
 
   return (
     <div className="App">

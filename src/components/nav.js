@@ -7,7 +7,7 @@ class Nav extends Component{
     constructor(props){
         super(props)
         this.state = {
-            open:false
+            open:false,
         }
         this.handleClick = this.handleClick.bind(this)
     }
@@ -16,16 +16,27 @@ class Nav extends Component{
         this.setState({
             open: !this.state.open
         });
+
+        // grab slider container
+        var sliderContainer = document.getElementsByClassName('hamburger-slide-container')[0]
+
+        if(!this.state.open){
+            //setting 1
+            sliderContainer.classList.add('slide-in')
+            sliderContainer.classList.remove('slide-out')
+        } else if(this.state.open){
+            //setting 2
+            sliderContainer.classList.remove('slide-in')
+            sliderContainer.classList.add('slide-out')
+        } else{
+            console.log('....um')
+        }
     }
 
-
-
-
-    
     render(){
 
         var str = {0:'/hayden-site',1:''}
-        var choice = str[0]
+        var choice = str[1]
 
         return(
 
