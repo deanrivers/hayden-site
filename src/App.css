@@ -295,6 +295,7 @@ textarea{
   transition: 0.2s ease-in-out;
 }
 
+
 #navbar-list:hover{
   /* border-bottom: 5px solid #FF8900; */
 }
@@ -313,6 +314,12 @@ textarea{
   opacity: 0.6;
   text-decoration: none;
   transition: 0.2s ease-in-out;
+}
+
+.Nav_Link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #navbar-list a:hover{

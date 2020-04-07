@@ -96,11 +96,10 @@ class Nav extends Component{
                 <div id="hamburger-slide-container" className="ham-nav-items">
                     <div className="slidebar-list-container">
                         <div id="slidebar-list">
-                                <div onClick={this.menuItemClicked} className="slidebar-menu-items"><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/home"}><p>Home</p></NavLink></div>                        
-                                <div onClick={this.menuItemClicked} className="slidebar-menu-items"><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/booking"}><p>Booking</p></NavLink></div>                        
-                                <div onClick={this.menuItemClicked} className="slidebar-menu-items"><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/portfolio"}><p>Portfolio</p></NavLink></div>                        
-                                <div onClick={this.menuItemClicked} className="slidebar-menu-items"><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/contact"}><p>Contact</p></NavLink></div>                        
-                            
+                            <div onClick={this.menuItemClicked} className="slidebar-menu-items"><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/home"}><p>Home</p></NavLink></div>                        
+                            <div onClick={this.menuItemClicked} className="slidebar-menu-items"><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/booking"}><p>Booking</p></NavLink></div>                        
+                            <div onClick={this.menuItemClicked} className="slidebar-menu-items"><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/portfolio"}><p>Portfolio</p></NavLink></div>                        
+                            <div onClick={this.menuItemClicked} className="slidebar-menu-items"><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/contact"}><p>Contact</p></NavLink></div>                        
                         </div>
                     </div>
                 </div>
