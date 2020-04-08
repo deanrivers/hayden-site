@@ -49,6 +49,11 @@ h1{
   width: 65%;
   width: 209px;
   height: 220px;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
 #social-media-container{
   display: flex;
@@ -59,12 +64,14 @@ h1{
   position: absolute;
   bottom: 0%;
   left: 1%;
+  width: 3%;
+  min-width: 40px;
 }
 
 .social-media-icons{
-  width: 2%;
+  width: 100%;
   margin-top: 5px;
-  min-width: 30px;
+  min-width: 40px;
   cursor: pointer;
   position: relative;
   left: 0px;
@@ -239,9 +246,7 @@ textarea{
     width: 100%;
   }
 
-  #logo{
-    width: 50%;
-  }
+
 
   .svg-container{
     width: 100%;
@@ -311,7 +316,7 @@ textarea{
 #navbar-list a, .slidebar-menu-items a{
   color: white;
   color: #FF8900;
-  opacity: 0.6;
+  opacity: 1;
   text-decoration: none;
   transition: 0.2s ease-in-out;
 }
@@ -335,8 +340,8 @@ textarea{
 .hamburger-container{
   display: block;
   position: fixed;
-  top: 5%;
-  right: 5%;
+  top: 1%;
+  right: 1%;
   z-index: 500;
   /* border-radius: 3px; */
   background: #ff6200;
@@ -349,6 +354,7 @@ textarea{
   width: 50px;
   height: 50px;
   z-index: 1000;
+  /* border: 1px solid #07BEB8; */
 }
 
 .hamburger-container > div{
@@ -418,20 +424,20 @@ textarea{
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.3s ease-in-out;
+  /* transition: 0.3s ease-in-out; */
 }
 
 .slidebar-menu-items a{
   height: 100%;
   width: 100%;
-  font-size: 3em;
-  
+  font-size: 2.5em;
 }
 
 
 
 .slidebar-menu-items:hover{
   background-color: #c4fffe;
+  background-color: #34F6F2;
 }
 
 .hamburger-circle{
