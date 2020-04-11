@@ -3,6 +3,7 @@ import {NavLink} from 'react-router-dom'
 import HamburgerMenu from 'react-hamburger-menu'
 import FadeIn from 'react-fade-in'
 import $ from 'jquery'
+import Social from '../components/social-media'
 
 class Nav extends Component{
 
@@ -71,14 +72,13 @@ class Nav extends Component{
 
             
             <div id="navbar-container">
-            
-                <ul id="navbar-list">
-                    <li><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/home"}>Home</NavLink></li>                        
-                    <li><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/booking"}>Booking</NavLink></li>                        
-                    <li><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/portfolio"}>Portfolio</NavLink></li>                        
-                    <li><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/contact"}>Contact</NavLink></li>                        
-                </ul>
+                
+
+                <Social/>
+                
+                
                 <div id="hamburger" className="hamburger-container">
+                        
                         <HamburgerMenu
                             isOpen={this.state.open}
                             menuClicked={this.handleClick}
