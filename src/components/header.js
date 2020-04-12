@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import logo from '../assets/logo.svg'
+import React from 'react'
+import logo from '../assets/H10.png'
 
 import Social from '../components/social-media'
 
@@ -7,31 +7,15 @@ import Social from '../components/social-media'
 
 
 
-class Header extends Component{
+let Header = ()=>{
 
-    constructor(props){
-        super(props)
-
-        this.state = {
-
-        }
-
-    }
-    
-
-    render(){
         return(
             <div id="main-header-container">
-                    
                     <div id="logo-container">
                         <img id="logo" src={logo} alt="logo" draggable="false"/>
                     </div>
-                    
-            </div>  
-            
+            </div>
         )
-    }
-    
 }
 
 export default Header
