@@ -3,10 +3,6 @@ import logo from '../assets/H10.png'
 
 import Social from '../components/social-media'
 
-
-
-
-
 let Header = ()=>{
 
         return(

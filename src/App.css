@@ -73,6 +73,8 @@ h1{
 
 #social-media-container a{
   margin-right: 2%;
+  max-width: 40px;
+  
 }
 
 #navbar-container{
@@ -531,8 +533,23 @@ textarea{
       width: 50px;
       height: 50px;
       z-index: 1000;
+      order: 1;
     }
 
+    #social-media-container{
+      flex-direction: column;
+      order: 2;
+    }
+
+    #social-media-container a{
+      margin: 0 auto;
+    }
+
+
+    #navbar-container{
+      flex-direction: column;
+      width: fit-content;
+    }
     #navbar-list{
       display: none;
     }
