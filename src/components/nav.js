@@ -22,22 +22,23 @@ class Nav extends Component{
     }
 
     componentWillMount() {
+        
         this.unlisten = this.props.history.listen((location, action) => {
             console.log("on route change");
             console.log(location)
 
           //fade logo animation
-          $('#animation-container').fadeIn('slow',()=>{
-            $('#animation-container').addClass('flex')
-            document.getElementsByTagName('html')[0].setAttribute("style", "overflow-y:hidden;");
+        //   $('#animation-container').fadeIn('slow',()=>{
+        //     $('#animation-container').addClass('flex')
+        //     document.getElementsByTagName('html')[0].setAttribute("style", "overflow-y:hidden;");
             
-            setTimeout(function(){
-                $('#animation-container').fadeOut('fast',()=>{
-                    $('#animation-container').removeClass('flex')
-                    document.getElementsByTagName('html')[0].setAttribute("style", "overflow-y:auto;");
-                })
-            },100)
-          })
+        //     setTimeout(function(){
+        //         $('#animation-container').fadeOut('fast',()=>{
+        //             $('#animation-container').removeClass('flex')
+        //             document.getElementsByTagName('html')[0].setAttribute("style", "overflow-y:auto;");
+        //         })
+        //     },100)
+        //   })
         });
       }
       componentWillUnmount() {
@@ -64,8 +65,6 @@ class Nav extends Component{
             hamburger.classList.add('hamburger-circle')
             hamburger.classList.remove('hamburger-square')
 
-            
-
         } else if(this.state.open){
             //setting 2
             sliderContainer.classList.remove('slide-in')
@@ -84,7 +83,22 @@ class Nav extends Component{
     }
 
     menuItemClicked(){
+
+        $('#animation-container').fadeIn('slow',()=>{
+            $('#animation-container').addClass('flex')
+            document.getElementsByTagName('html')[0].setAttribute("style", "overflow-y:hidden;");
+            
+            setTimeout(function(){
+                $('#animation-container').fadeOut('fast',()=>{
+                    $('#animation-container').removeClass('flex')
+                    document.getElementsByTagName('html')[0].setAttribute("style", "overflow-y:auto;");
+                })
+            },100)
+          })
         this.handleClick()
+        
+          
+        
     }
 
     render(){

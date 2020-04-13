@@ -4,6 +4,7 @@ import './App.css';
 
 import { BrowserRouter as Router, Route, Switch, withRouter } from "react-router-dom";
 import { createBrowserHistory } from "history";
+import { CSSTransition, TransitionGroup} from "react-transition-group";
 
 
 
@@ -47,12 +48,21 @@ class App extends Component{
           <Nav/>
           <Route
             render={()=>(
-              <Switch>
-                <Route path={choice+"/home"} component={Header} exact/>
-                <Route path={choice+"/portfolio"} component={Video} />
-                <Route path={choice+"/contact"} component={Contact} />
-                <Route path={choice+"/"} component={Header}/>
-              </Switch>
+              <TransitionGroup>
+                <CSSTransition
+                  timeout={300}
+                  classNames="fade"
+
+                  >
+                  <Switch>
+                    <Route path={choice+"/home"} component={Header} exact/>
+                    <Route path={choice+"/portfolio"} component={Video} />
+                    <Route path={choice+"/contact"} component={Contact} />
+                    <Route path={choice+"/"} component={Header}/>
+                  </Switch>
+                </CSSTransition>
+
+              </TransitionGroup>
             )}
           />
         </Router>
