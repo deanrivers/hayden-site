@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../assets/H10.png'
+import logo from '../assets/Hay10 (1).svg'
 
 import Social from '../components/social-media'
 

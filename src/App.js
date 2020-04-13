@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import './App.css';
 
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, withRouter } from "react-router-dom";
+import { createBrowserHistory } from "history";
+
 
 
 import Header from './components/header'
@@ -12,36 +14,62 @@ import Contact from './components/contact'
 
 import Nav from './components/nav'
 
-let App = ()=>{
-  var str = {0:'/hayden-site',1:''}
-  var choice = str[1]
+class App extends Component{
 
-  return (
-    <div className="App">
-      <Router>
-        <Nav/>
-        <Route
-          render={()=>(
-            <Switch>
-              <Route path={choice+"/home"} component={Header} exact/>
-              <Route path={choice+"/portfolio"} component={Video} />
-              <Route path={choice+"/contact"} component={Contact} />
-              <Route path={choice+"/"} component={Header}/>
-            </Switch>
-          )}
-        />
-      </Router>
+  constructor(props){
+    super(props)
+    this.state = {
+      animationPlay: false,
+      animationType: ''
+    }
+    
+  }
 
 
+
+  componentDidUpdate(){
+    console.log('update')
+  }
+
+  render(){
+
+  
+
+    var str = {0:'/hayden-site',1:''}
+    var choice = str[1]
+    const history = createBrowserHistory()
+
+
+    return (
       
+      <div className="App">
+        <Router history={history}>
+          <Nav/>
+          <Route
+            render={()=>(
+              <Switch>
+                <Route path={choice+"/home"} component={Header} exact/>
+                <Route path={choice+"/portfolio"} component={Video} />
+                <Route path={choice+"/contact"} component={Contact} />
+                <Route path={choice+"/"} component={Header}/>
+              </Switch>
+            )}
+          />
+        </Router>
+  
+  
+        
+  
+        
+        {/* <Header/>
+        <Video/>
+        <Contact/>
+        <Bottom/> */}
+      </div>
+    );
+  }
 
-      
-      {/* <Header/>
-      <Video/>
-      <Contact/>
-      <Bottom/> */}
-    </div>
-  );
+  
 }
 
-export default App;
+export default App

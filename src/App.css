@@ -83,6 +83,7 @@ h1{
   right: 1%;
   top: 1%;
   width: 100%;
+  z-index: 100;
 }
 
 .social-media-icons{
@@ -450,7 +451,7 @@ textarea{
 .slidebar-menu-items a{
   height: 100%;
   width: 100%;
-  font-size: 2.5em;
+  font-size: 2.0em;
 }
 
 
@@ -461,7 +462,7 @@ textarea{
 }
 
 .hamburger-circle{
-  border-radius: 100px;
+  /* border-radius: 100px; */
   animation: toCircle ease-in-out;
   animation-duration: 0.2s;
   background-color: #aef7ff;
@@ -562,4 +563,56 @@ textarea{
     #navbar-list{
       display: flex;
     }
+}
+
+/* animations */
+#animation-container{
+  display: none;
+  /* position: absolute; */
+  position: absolute;
+  background: #73D3D2;
+  width: 100vw;
+  height: 100vh;
+  z-index: 150;
+  /* display: none; */
+  justify-content: center;
+  align-items: center;
+}
+
+#animation-container img{
+  width: 100%;
+  max-width: 200px;
+}
+
+.animation-fade-in{
+  display: flex;
+  animation: fade-in;
+  animation-duration: 2s;
+  display: flex !important;
+  opacity: 1;
+}
+
+#animation-logo-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.animation-fade-out{
+  animation: fade-out ease-in-out;
+  animation-duration: 1.0s;
+  opacity: 0;
+}
+
+@keyframes fade-in{
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
 }

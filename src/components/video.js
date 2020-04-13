@@ -1,6 +1,6 @@
 import React from 'react'
 import Gallery from './gallery'
-import FadeIn from 'react-fade-in'
+
 
 let Video = () =>{
     

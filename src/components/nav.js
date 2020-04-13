@@ -1,9 +1,13 @@
 import React, {Component} from 'react'
 import {NavLink} from 'react-router-dom'
 import HamburgerMenu from 'react-hamburger-menu'
-import FadeIn from 'react-fade-in'
+import {withRouter} from 'react-router'
+import Animation from './animation'
 import $ from 'jquery'
+
+//import $ from 'jquery'
 import Social from '../components/social-media'
+import { createBrowserHistory } from "history";
 
 class Nav extends Component{
 
@@ -11,13 +15,42 @@ class Nav extends Component{
         super(props)
         this.state = {
             open:false,
+            browserHistory: [],
         }
         this.handleClick = this.handleClick.bind(this)
         this.menuItemClicked = this.menuItemClicked.bind(this)
     }
 
+    componentWillMount() {
+        this.unlisten = this.props.history.listen((location, action) => {
+            console.log("on route change");
+            console.log(location)
+
+          //fade logo animation
+          $('#animation-container').fadeIn('slow',()=>{
+            $('#animation-container').addClass('flex')
+            document.getElementsByTagName('html')[0].setAttribute("style", "overflow-y:hidden;");
+            
+            setTimeout(function(){
+                $('#animation-container').fadeOut('fast',()=>{
+                    $('#animation-container').removeClass('flex')
+                    document.getElementsByTagName('html')[0].setAttribute("style", "overflow-y:auto;");
+                })
+            },300)
+          })
+
+            
+
+
+        });
+      }
+      componentWillUnmount() {
+          this.unlisten();
+      }
+
+
+
     handleClick(){
-        console.log('handle click')
         this.setState({
             open: !this.state.open
         });
@@ -43,7 +76,7 @@ class Nav extends Component{
             //setting 2
             sliderContainer.classList.remove('slide-in')
             sliderContainer.classList.add('slide-out')
-            document.getElementsByTagName('html')[0].setAttribute("style", "overflow-y:auto;");
+            //document.getElementsByTagName('html')[0].setAttribute("style", "overflow-y:auto;");
 
             //hamburger animation
             hamburger.classList.remove('hamburger-circle')
@@ -65,16 +98,16 @@ class Nav extends Component{
         var str = {0:'/hayden-site',1:''}
         var choice = str[1]
 
-    
 
-        return(
+        return([
 
-
+            <Animation/>,
             
             <div id="navbar-container">
-                
-                
                 <Social/>
+                
+
+                
                 
                 
                 <div id="hamburger" className="hamburger-container">
@@ -104,8 +137,8 @@ class Nav extends Component{
                     </div>
                 </div>
             </div>
-        )
+        ])
     }
 }
 
-export default Nav
+export default withRouter(Nav)
