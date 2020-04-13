@@ -36,19 +36,13 @@ class Nav extends Component{
                     $('#animation-container').removeClass('flex')
                     document.getElementsByTagName('html')[0].setAttribute("style", "overflow-y:auto;");
                 })
-            },300)
+            },100)
           })
-
-            
-
-
         });
       }
       componentWillUnmount() {
           this.unlisten();
       }
-
-
 
     handleClick(){
         this.setState({
