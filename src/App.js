@@ -48,21 +48,14 @@ class App extends Component{
           <Nav/>
           <Route
             render={()=>(
-              <TransitionGroup>
-                <CSSTransition
-                  timeout={300}
-                  classNames="fade"
-
-                  >
+              
                   <Switch>
                     <Route path={choice+"/home"} component={Header} exact/>
                     <Route path={choice+"/portfolio"} component={Video} />
                     <Route path={choice+"/contact"} component={Contact} />
                     <Route path={choice+"/"} component={Header}/>
                   </Switch>
-                </CSSTransition>
 
-              </TransitionGroup>
             )}
           />
         </Router>

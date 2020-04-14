@@ -4,6 +4,7 @@ import HamburgerMenu from 'react-hamburger-menu'
 import {withRouter} from 'react-router'
 import Animation from './animation'
 import $ from 'jquery'
+import {slide as Menu} from 'react-burger-menu'
 
 //import $ from 'jquery'
 import Social from '../components/social-media'
@@ -27,18 +28,6 @@ class Nav extends Component{
             console.log("on route change");
             console.log(location)
 
-          //fade logo animation
-        //   $('#animation-container').fadeIn('slow',()=>{
-        //     $('#animation-container').addClass('flex')
-        //     document.getElementsByTagName('html')[0].setAttribute("style", "overflow-y:hidden;");
-            
-        //     setTimeout(function(){
-        //         $('#animation-container').fadeOut('fast',()=>{
-        //             $('#animation-container').removeClass('flex')
-        //             document.getElementsByTagName('html')[0].setAttribute("style", "overflow-y:auto;");
-        //         })
-        //     },100)
-        //   })
         });
       }
       componentWillUnmount() {
@@ -59,7 +48,7 @@ class Nav extends Component{
             sliderContainer.classList.add('slide-in')
             sliderContainer.classList.remove('slide-out')
             sliderContainer.classList.remove('slide-none')
-            document.getElementsByTagName('html')[0].setAttribute("style", "overflow-y:hidden;")
+            document.getElementsByTagName('html')[0].setAttribute("style", "overflow-y:auto;")
 
             //hamburger animation forward
             hamburger.classList.add('hamburger-circle')
@@ -114,10 +103,6 @@ class Nav extends Component{
             <div id="navbar-container">
                 <Social/>
                 
-
-                
-                
-                
                 <div id="hamburger" className="hamburger-container">
                         
                         <HamburgerMenu
@@ -132,13 +117,15 @@ class Nav extends Component{
                             borderRadius={0}
                             animationDuration={0.5}
                         />
+                        
 
                     </div>
                 <div id="hamburger-slide-container" className="ham-nav-items">
                     <div className="slidebar-list-container">
                         <div id="slidebar-list">
+                            
                             <div onClick={this.menuItemClicked} className="slidebar-menu-items"><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/home"}><p>Home</p></NavLink></div>                        
-                            <div onClick={this.menuItemClicked} className="slidebar-menu-items"><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/booking"}><p>Booking</p></NavLink></div>                        
+                            {/* <div onClick={this.menuItemClicked} className="slidebar-menu-items"><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/booking"}><p>Booking</p></NavLink></div>                         */}
                             <div onClick={this.menuItemClicked} className="slidebar-menu-items"><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/portfolio"}><p>Portfolio</p></NavLink></div>                        
                             <div onClick={this.menuItemClicked} className="slidebar-menu-items"><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/contact"}><p>Contact</p></NavLink></div>                        
                         </div>

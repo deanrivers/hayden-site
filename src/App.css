@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400&display=swap');
 html,body{
   width: 100%;
   margin: 0 auto;
@@ -6,6 +8,7 @@ html,body{
   overflow-x: hidden;
   scroll-behavior: smooth;
   font-family: Hiragino Kaku Gothic Pro W6;
+  font-family: 'Muli', sans-serif;
 }
 
 a{
@@ -42,13 +45,16 @@ h1{
   display: flex;
   justify-content: center;
   align-self: center;
+  width: 100%;
+  height: 100%;
+  align-items: center;
 }
 
 #logo{
   align-items: center;
-  width: 65%;
-  width: 209px;
-  height: 220px;
+  width: 100%;
+  max-width: 200px;
+  height: 243px;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
@@ -66,13 +72,14 @@ h1{
   /* left: 1%; */
   /* max-width: 40px; */
   min-width: 40px;
+  height: 100%;
   
   /* margin-right: 15%; */
 
 }
 
 #social-media-container a{
-  margin-right: 2%;
+  margin-right: 1%;
   max-width: 40px;
   
 }
@@ -83,6 +90,7 @@ h1{
   right: 1%;
   top: 1%;
   width: 100%;
+  /* height: 100%; */
   z-index: 100;
 }
 
@@ -374,6 +382,7 @@ textarea{
   width: 50px;
   height: 50px;
   z-index: 1000;
+  /* box-shadow: 1px 1px 2px 1px #56797d; */
   /* border: 1px solid #07BEB8; */
 }
 
@@ -464,14 +473,14 @@ textarea{
 
 .hamburger-circle{
   /* border-radius: 100px; */
-  animation: toCircle ease-in-out;
+  /* animation: toCircle ease-in-out; */
   animation-duration: 0.2s;
   background-color: #aef7ff;
 }
 
 .hamburger-square{
   border-radius: 0px;
-  animation: toSquare ease-in-out;
+  /* animation: toSquare ease-in-out; */
   animation-duration: 0.2s;
   background-color: #aef7ff;
 }
@@ -523,7 +532,7 @@ textarea{
 }
 
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 800px){
     #main-contact-container{
       margin-top: 0;
     }
@@ -551,6 +560,7 @@ textarea{
     #navbar-container{
       flex-direction: column;
       width: fit-content;
+      height: 100%;
     }
     #navbar-list{
       display: none;
@@ -583,6 +593,7 @@ textarea{
 #animation-container img{
   width: 100%;
   max-width: 200px;
+  /* height: 243px; */
 }
 
 .animation-fade-in{
@@ -688,3 +699,67 @@ textarea{
 }
 
 
+#about-container{
+  
+}
+
+#about-container p{
+  /* margin: 0 auto; */
+}
+
+#about-parent-container{
+  background-color: #73D3D2;
+  color: white;
+  font-size: 2em;
+  color: white;
+  background-color: #73D3D2;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Muli', sans-serif;
+  font-weight: 100;
+  /* padding: 10%; */
+}
+
+hr{
+  background-color: white;
+  border: 1px solid;
+}
+
+
+#arrow-container{
+  position: absolute;
+  z-index: 10000;
+  bottom: 5%;
+  left: 50%;
+  transform: rotate(90deg);
+  color: white;
+  background: #FF8900;
+  padding: 10px;
+}
+
+#counter-container{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  
+  background-color: white;
+  color: #73D3D2;
+  height: 300px;
+}
+
+.counter-children{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.counter-children span{
+  display: block;
+}
+
+.counter-children img{
+  width: 100%;
+  height: 100%;
+  max-width: 80px;
+  margin: 0 auto;
+}
