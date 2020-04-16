@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "77e9a9d53656acba0d8bef60856cc686",
+    "revision": "b1f6e36dd59571c149907f62fe5efb99",
     "url": "/hayden-site/index.html"
   },
   {
-    "revision": "81e307483b058be7f425",
-    "url": "/hayden-site/static/css/2.240942cf.chunk.css"
+    "revision": "333bd29235f49a24d8fb",
+    "url": "/hayden-site/static/css/2.3ccd9467.chunk.css"
   },
   {
-    "revision": "0898c08da36c11467cc1",
-    "url": "/hayden-site/static/css/main.14ea0543.chunk.css"
+    "revision": "3ec87df9e35540feb4d4",
+    "url": "/hayden-site/static/css/main.95b853cc.chunk.css"
   },
   {
-    "revision": "81e307483b058be7f425",
-    "url": "/hayden-site/static/js/2.264f34d1.chunk.js"
+    "revision": "333bd29235f49a24d8fb",
+    "url": "/hayden-site/static/js/2.0bb7b8e1.chunk.js"
   },
   {
     "revision": "5d02016f6a9a3fbb9bc638d50f0a8b90",
-    "url": "/hayden-site/static/js/2.264f34d1.chunk.js.LICENSE.txt"
+    "url": "/hayden-site/static/js/2.0bb7b8e1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0898c08da36c11467cc1",
-    "url": "/hayden-site/static/js/main.2d03aace.chunk.js"
+    "revision": "3ec87df9e35540feb4d4",
+    "url": "/hayden-site/static/js/main.dfb07da6.chunk.js"
   },
   {
     "revision": "05222e02ad7a232f5095",
@@ -86,6 +86,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "dda0fce66ae0e4497567212b9deda995",
     "url": "/hayden-site/static/media/rma.dda0fce6.png"
+  },
+  {
+    "revision": "b7c9e1e479de3b53f1e4e30ebac2403a",
+    "url": "/hayden-site/static/media/slick.b7c9e1e4.woff"
+  },
+  {
+    "revision": "ced611daf7709cc778da928fec876475",
+    "url": "/hayden-site/static/media/slick.ced611da.eot"
+  },
+  {
+    "revision": "d41f55a78e6f49a5512878df1737e58a",
+    "url": "/hayden-site/static/media/slick.d41f55a7.ttf"
+  },
+  {
+    "revision": "f97e3bbf73254b0112091d0192f17aec",
+    "url": "/hayden-site/static/media/slick.f97e3bbf.svg"
   },
   {
     "revision": "7f26e1a2dcc7603b31954afeed40a865",

@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/hayden-site/static/css/main.14ea0543.chunk.css",
-    "main.js": "/hayden-site/static/js/main.2d03aace.chunk.js",
-    "main.js.map": "/hayden-site/static/js/main.2d03aace.chunk.js.map",
+    "main.css": "/hayden-site/static/css/main.95b853cc.chunk.css",
+    "main.js": "/hayden-site/static/js/main.dfb07da6.chunk.js",
+    "main.js.map": "/hayden-site/static/js/main.dfb07da6.chunk.js.map",
     "runtime-main.js": "/hayden-site/static/js/runtime-main.94d93194.js",
     "runtime-main.js.map": "/hayden-site/static/js/runtime-main.94d93194.js.map",
-    "static/css/2.240942cf.chunk.css": "/hayden-site/static/css/2.240942cf.chunk.css",
-    "static/js/2.264f34d1.chunk.js": "/hayden-site/static/js/2.264f34d1.chunk.js",
-    "static/js/2.264f34d1.chunk.js.map": "/hayden-site/static/js/2.264f34d1.chunk.js.map",
+    "static/css/2.3ccd9467.chunk.css": "/hayden-site/static/css/2.3ccd9467.chunk.css",
+    "static/js/2.0bb7b8e1.chunk.js": "/hayden-site/static/js/2.0bb7b8e1.chunk.js",
+    "static/js/2.0bb7b8e1.chunk.js.map": "/hayden-site/static/js/2.0bb7b8e1.chunk.js.map",
     "index.html": "/hayden-site/index.html",
-    "precache-manifest.285dbb18fb2ec9edba451234835eb6dc.js": "/hayden-site/precache-manifest.285dbb18fb2ec9edba451234835eb6dc.js",
+    "precache-manifest.eec536e6527772911412928536477a26.js": "/hayden-site/precache-manifest.eec536e6527772911412928536477a26.js",
     "service-worker.js": "/hayden-site/service-worker.js",
-    "static/css/2.240942cf.chunk.css.map": "/hayden-site/static/css/2.240942cf.chunk.css.map",
-    "static/css/main.14ea0543.chunk.css.map": "/hayden-site/static/css/main.14ea0543.chunk.css.map",
-    "static/js/2.264f34d1.chunk.js.LICENSE.txt": "/hayden-site/static/js/2.264f34d1.chunk.js.LICENSE.txt",
+    "static/css/2.3ccd9467.chunk.css.map": "/hayden-site/static/css/2.3ccd9467.chunk.css.map",
+    "static/css/main.95b853cc.chunk.css.map": "/hayden-site/static/css/main.95b853cc.chunk.css.map",
+    "static/js/2.0bb7b8e1.chunk.js.LICENSE.txt": "/hayden-site/static/js/2.0bb7b8e1.chunk.js.LICENSE.txt",
     "static/media/H10.png": "/hayden-site/static/media/H10.170e8d1a.png",
     "static/media/about_me.svg": "/hayden-site/static/media/about_me.75e2b5e1.svg",
     "static/media/adidas.png": "/hayden-site/static/media/adidas.25b6a04e.png",
@@ -29,6 +29,7 @@
     "static/media/nyrb.png": "/hayden-site/static/media/nyrb.4b3303b2.png",
     "static/media/redbull.png": "/hayden-site/static/media/redbull.1043899a.png",
     "static/media/rma.png": "/hayden-site/static/media/rma.dda0fce6.png",
+    "static/media/slick-theme.css": "/hayden-site/static/media/slick.f97e3bbf.svg",
     "static/media/tiktok.png": "/hayden-site/static/media/tiktok.7f26e1a2.png",
     "static/media/tmobile.png": "/hayden-site/static/media/tmobile.2e204fb4.png",
     "static/media/univision.png": "/hayden-site/static/media/univision.35bc3bcd.png",
@@ -37,9 +38,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.94d93194.js",
-    "static/css/2.240942cf.chunk.css",
-    "static/js/2.264f34d1.chunk.js",
-    "static/css/main.14ea0543.chunk.css",
-    "static/js/main.2d03aace.chunk.js"
+    "static/css/2.3ccd9467.chunk.css",
+    "static/js/2.0bb7b8e1.chunk.js",
+    "static/css/main.95b853cc.chunk.css",
+    "static/js/main.dfb07da6.chunk.js"
   ]
 }
