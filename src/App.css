@@ -763,3 +763,42 @@ hr{
   max-width: 80px;
   margin: 0 auto;
 }
+
+/* carousel */
+#brand-carousel{
+  background-color: white;
+  color: #73D3D2;
+  /* border: 5px solid red; */
+  margin-bottom: 10%;
+}
+
+.carousel .slide{
+  background-color: white !important;
+}
+
+.carousel img{
+  background: white;
+  max-width: 300px !important;
+}
+
+.control-dots{
+  display: none;
+}
+
+.carousel-status{
+  display: none;
+}
+
+.carousel-root{
+  padding-top: 10%;
+}
+
+.carousel-root{
+  padding: 0;
+}
+
+.slide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

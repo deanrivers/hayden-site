@@ -6,6 +6,7 @@ import FadeIn from 'react-fade-in'
 import About from '../components/about'
 import SocialCounter from '../components/social-counter'
 import Footer from '../components/footer'
+import Brands from '../components/brands'
 
 let Header = ()=>{
 
@@ -24,6 +25,8 @@ let Header = ()=>{
                 <About/>
                 
                 <SocialCounter/>
+                <Brands/>
+
                 
             </div>
             
