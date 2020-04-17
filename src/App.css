@@ -718,6 +718,9 @@ textarea{
   font-weight: 100;
   /* padding: 10%; */
 }
+#about-container{
+  padding: 5%;
+}
 
 hr{
   background-color: white;
@@ -768,17 +771,21 @@ hr{
 #brand-carousel{
   background-color: white;
   color: #73D3D2;
+  padding: 5%;
   /* border: 5px solid red; */
   margin-bottom: 10%;
 }
 
+
+/* react carousel */
 .carousel .slide{
   background-color: white !important;
 }
 
 .carousel img{
   background: white;
-  max-width: 300px !important;
+  max-width: 250px !important;
+  /* height: 100%; */
 }
 
 .control-dots{
@@ -801,4 +808,29 @@ hr{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+/* slick carousel */
+.slick-initialized .slick-slide{
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1%;
+}
+
+.slick-slide img{
+  max-width: 200px;
+}
+
+.slick-track{
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+#social-container{
+  background-color: white;
+  color: #73D3D2;
+  padding: 5%;
 }
