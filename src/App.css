@@ -43,11 +43,17 @@ h1{
 
 #logo-container{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-self: center;
   width: 100%;
   height: 100%;
   align-items: center;
+  color: white;
+}
+
+#intro-container{
+  
 }
 
 #logo{
@@ -418,7 +424,7 @@ textarea{
   /* background: #99faf9; */
 }
 .slide-in{
-  width: 50%;
+  width: 100%;
   right: 0;
   display: block;
   animation: slide-in ease-in-out;
@@ -432,7 +438,7 @@ textarea{
 
 
 .slide-out{
-  width: 50%;
+  width: 100%;
   display: block;
   animation: slide-out ease-in-out;
   animation-duration: 0.2s;
@@ -536,6 +542,16 @@ textarea{
     #main-contact-container{
       margin-top: 0;
     }
+    #about-container{
+      padding: 5% !important;
+    }
+    #social-container{
+      padding: 5% !important;
+    }
+    #brand-carousel{
+      padding: 5% !important;
+    }
+
 
     .hamburger-container{
       display: flex;
@@ -564,6 +580,10 @@ textarea{
     }
     #navbar-list{
       display: none;
+    }
+
+    .slide-in{
+      /* width: 100%; */
     }
 }
 @media only screen and (min-width: 600px){
@@ -694,7 +714,7 @@ textarea{
 }
 
 .color{
-  background-color: #73D3D2;
+  /* background-color: #73D3D2; */
   height: 100vh;
 }
 
@@ -708,11 +728,11 @@ textarea{
 }
 
 #about-parent-container{
-  background-color: #73D3D2;
+  /* background-color: #73D3D2; */
   color: white;
   font-size: 2em;
   color: white;
-  background-color: #73D3D2;
+  /* background-color: #73D3D2; */
   font-family: 'Lato', sans-serif;
   font-family: 'Muli', sans-serif;
   font-weight: 100;
@@ -720,6 +740,11 @@ textarea{
 }
 #about-container{
   padding: 5%;
+}
+
+#social-container hr{
+  width: 50%;
+  background-color: #73D3D2;
 }
 
 hr{
@@ -747,13 +772,14 @@ hr{
   
   background-color: white;
   color: #73D3D2;
-  height: 300px;
+  /* height: 300px; */
 }
 
 .counter-children{
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
 }
 
 .counter-children span{
@@ -763,7 +789,7 @@ hr{
 .counter-children img{
   width: 100%;
   height: 100%;
-  max-width: 80px;
+  /* max-width: 80px; */
   margin: 0 auto;
 }
 
@@ -771,9 +797,9 @@ hr{
 #brand-carousel{
   background-color: white;
   color: #73D3D2;
-  padding: 5%;
+  /* padding: 5%; */
   /* border: 5px solid red; */
-  margin-bottom: 10%;
+  /* margin-bottom: 10%; */
 }
 
 
@@ -832,5 +858,78 @@ hr{
 #social-container{
   background-color: white;
   color: #73D3D2;
-  padding: 5%;
+  padding-top: 5%;
+}
+
+#community-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+}
+
+#community-container hr{
+  width: 40%;
+}
+
+#community-container p{
+  margin: 0 auto;
+}
+
+.counter-children a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+
+.counter-children a:hover{
+  /* box-shadow: 1px 1px 1px 1px; */
+}
+
+.visit-button{
+  margin-top: 10%;
+  background-color: white;
+  width: 80px;
+  height: 40px;
+  border: 2px solid #73D3D2;
+  outline: none;
+  border-radius: 5px;
+  color: #73D3D2;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.visit-button:hover{
+  background-color: #73D3D2;
+  color: white;
+}
+
+.vertical-nav-container{
+  flex-direction: column;
+  width: fit-content;
+  height: 100%;
+}
+
+.vertical-social-container{
+  order: 2;
+  flex-direction: column;
+}
+
+#footer-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #73D3D2;
+  color: rgb(167, 167, 167);
+  width: 100%;
+  margin: 0 auto;
+  font-size: 0.9em;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+video{
+  width: 100%;
 }

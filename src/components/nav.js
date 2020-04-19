@@ -7,7 +7,7 @@ import $ from 'jquery'
 import {slide as Menu} from 'react-burger-menu'
 
 //import $ from 'jquery'
-import Social from '../components/social-media'
+import Social from './social-media'
 import { createBrowserHistory } from "history";
 
 class Nav extends Component{

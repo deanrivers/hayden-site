@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Footer from './components/footer'
 
 import './App.css';
 
@@ -59,6 +60,7 @@ class App extends Component{
             )}
           />
         </Router>
+        {/* <Footer/> */}
   
   
         

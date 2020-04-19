@@ -47,9 +47,9 @@ let Brands = () =>{
     return(
 
         <div id="brand-carousel">
-            <h1>Brands I've worked with.</h1>
+            {/* <h1>Brands I've worked with.</h1>
             <br/>
-            <br/>
+            <br/> */}
             <Slider {...settings}
             >
                 <img src={adidasImage}/>
