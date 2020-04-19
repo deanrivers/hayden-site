@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "988aeb6caa443cd9eae9b22ec3b806a8",
+    "revision": "3379c7cee0fa402d355d5007f8533c05",
     "url": "/hayden-site/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hayden-site/static/css/2.3ccd9467.chunk.css"
   },
   {
-    "revision": "1646d45fd7f2861f4d12",
-    "url": "/hayden-site/static/css/main.abc984b5.chunk.css"
+    "revision": "24179ff452817dd320ed",
+    "url": "/hayden-site/static/css/main.236172c0.chunk.css"
   },
   {
     "revision": "447f0e59c4c1d32c97de",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hayden-site/static/js/2.9a657610.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1646d45fd7f2861f4d12",
+    "revision": "24179ff452817dd320ed",
     "url": "/hayden-site/static/js/main.603d9320.chunk.js"
   },
   {
