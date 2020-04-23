@@ -53,8 +53,8 @@ class App extends Component{
               
                   <Switch>
                     <Route path={choice+"/home"} component={Header} exact/>
-                    <Route path={choice+"/about"} component={About} exact/>
-                    <Route path={choice+"/booking"} component={Booking} exact/>
+                    <Route path={choice+"/about"} component={About} />
+                    <Route path={choice+"/booking"} component={Booking} />
                     <Route path={choice+"/portfolio"} component={Video} />
                     <Route path={choice+"/contact"} component={Contact} />
                     <Route path={choice+"/"} component={Header}/>

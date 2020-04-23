@@ -233,6 +233,7 @@ user-select: none;
 -webkit-user-drag: none;
 -webkit-user-select: none;
 -ms-user-select: none;
+width: 50%;
 }
 
 .svg-container{
@@ -991,4 +992,8 @@ video{
 #main-booking-container{
   padding: 10%;
   color: white;
+}
+
+.vanilla-children{
+  margin-left: 2%;
 }
