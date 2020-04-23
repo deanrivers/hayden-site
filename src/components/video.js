@@ -6,7 +6,7 @@ import FadeIn from 'react-fade-in'
 let Video = () =>{
     
         return(
-            <FadeIn delay={500} className="color">
+            <FadeIn delay={1000} className="color">
                 <div id="video-section-container">
                     <div id="video-header-container">
                         <h1>REAL FREESTYLER<span className="orange-text">.</span></h1>

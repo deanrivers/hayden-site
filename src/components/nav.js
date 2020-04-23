@@ -102,36 +102,53 @@ class Nav extends Component{
             
             <div id="navbar-container">
                 <Social/>
-                
-                <div id="hamburger" className="hamburger-container">
-                        
-                        <HamburgerMenu
-                            isOpen={this.state.open}
-                            menuClicked={this.handleClick}
-                            width={25}
-                            height={20}
-                            strokeWidth={1}
-                            rotate={0}
-                            // color='#73D3D2'
-                            color='#07BEB8'
-                            borderRadius={0}
-                            animationDuration={0.5}
-                        />
-                        
 
-                    </div>
-                <div id="hamburger-slide-container" className="ham-nav-items">
-                    <div className="slidebar-list-container">
-                        <div id="slidebar-list">
+                <div id="hamburger-nav-container">
+                    <div id="hamburger" className="hamburger-container">
                             
-                            <div onClick={this.menuItemClicked} className="slidebar-menu-items"><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/home"}><p>Home</p></NavLink></div>                        
-                            {/* <div onClick={this.menuItemClicked} className="slidebar-menu-items"><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/booking"}><p>Booking</p></NavLink></div>                         */}
-                            <div onClick={this.menuItemClicked} className="slidebar-menu-items"><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/portfolio"}><p>Portfolio</p></NavLink></div>                        
-                            <div onClick={this.menuItemClicked} className="slidebar-menu-items"><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/contact"}><p>Contact</p></NavLink></div>                        
+                            <HamburgerMenu
+                                isOpen={this.state.open}
+                                menuClicked={this.handleClick}
+                                width={25}
+                                height={20}
+                                strokeWidth={1}
+                                rotate={0}
+                                // color='#73D3D2'
+                                color='#07BEB8'
+                                borderRadius={0}
+                                animationDuration={0.5}
+                            />
+                            
+
+                        </div>
+                    <div id="hamburger-slide-container" className="ham-nav-items">
+                        <div className="slidebar-list-container">
+                            <div id="slidebar-list">
+                                <div onClick={this.menuItemClicked} className="slidebar-menu-items"><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/home"}><p>Home</p></NavLink></div>                        
+                                <div onClick={this.menuItemClicked} className="slidebar-menu-items"><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/about"}><p>About</p></NavLink></div>                        
+                                <div onClick={this.menuItemClicked} className="slidebar-menu-items"><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/booking"}><p>Booking</p></NavLink></div>                        
+                                <div onClick={this.menuItemClicked} className="slidebar-menu-items"><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/portfolio"}><p>Portfolio</p></NavLink></div>                        
+                                <div onClick={this.menuItemClicked} className="slidebar-menu-items"><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/contact"}><p>Contact</p></NavLink></div>                        
+                            </div>
                         </div>
                     </div>
+
                 </div>
-            </div>
+                
+                
+
+                
+            </div>,
+            <div id="vanilla-nav-container">
+                {/* <ul id="navbar-list"> */}
+                    <NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/home"}><div onClick={this.menuItemClicked}>HOME</div></NavLink>
+                    <NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/booking"}><div onClick={this.menuItemClicked}>BOOKING</div></NavLink>
+                    <NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/about"}><div onClick={this.menuItemClicked}>ABOUT</div></NavLink>
+                    <NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/portfolio"}><div onClick={this.menuItemClicked}>PORTFOLIO</div></NavLink>
+                    <NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/contact"}><div onClick={this.menuItemClicked}>CONTACT</div></NavLink>
+                {/* </ul> */}
+
+        </div>
         ])
     }
 }

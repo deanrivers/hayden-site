@@ -8,13 +8,14 @@ import { createBrowserHistory } from "history";
 import { CSSTransition, TransitionGroup} from "react-transition-group";
 
 
-
+//nav
 import Header from './components/header'
 import Video from './components/video'
-
 import Contact from './components/contact'
-
+import About from './components/about'
 import Nav from './components/nav'
+import Booking from './components/booking'
+
 
 class App extends Component{
 
@@ -52,6 +53,8 @@ class App extends Component{
               
                   <Switch>
                     <Route path={choice+"/home"} component={Header} exact/>
+                    <Route path={choice+"/about"} component={About} exact/>
+                    <Route path={choice+"/booking"} component={Booking} exact/>
                     <Route path={choice+"/portfolio"} component={Video} />
                     <Route path={choice+"/contact"} component={Contact} />
                     <Route path={choice+"/"} component={Header}/>

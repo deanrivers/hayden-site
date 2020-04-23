@@ -15,7 +15,7 @@ let Header = ()=>{
             // <div id="arrow-container">
             //         <span>>>>>>>></span>
             //     </div>,
-            <FadeIn delay={500} className="color">
+            <FadeIn delay={1000} className="color">
                 <div id="main-header-container">
                         <div id="logo-container">
                             <img id="logo" src={logo} alt="logo" draggable="false"/>

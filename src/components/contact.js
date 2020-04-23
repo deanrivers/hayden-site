@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import aboutImage from '../assets/about_me.svg'
+
 import contactImage from '../assets/contact.svg'
 import FadeIn from 'react-fade-in'
 
@@ -11,18 +11,11 @@ class Contact extends Component{
 
     render(){
         return(
-            <FadeIn delay={500} className="color">
+            <FadeIn delay={1000} className="color">
 
             
                 <div id="main-contact-container">
-                    <div className="svg-container">
-                        <img className="svg-header" src={aboutImage} alt="about"/>
-                    </div>
-                    <p className="contact-paragraphs">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”
-                    </p>
+                    
 
                     <div className="svg-container">
                         <img className="svg-header" src={contactImage} alt="contact"/>
