@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {NavLink} from 'react-router-dom'
 import HamburgerMenu from 'react-hamburger-menu'
-import {withRouter} from 'react-router'
+import {withRouter, useLocation} from 'react-router'
 import Animation from './animation'
 import $ from 'jquery'
 import {slide as Menu} from 'react-burger-menu'
@@ -26,13 +26,14 @@ class Nav extends Component{
         
         this.unlisten = this.props.history.listen((location, action) => {
             console.log("on route change");
-            console.log(location)
+            console.log('current location:',location)
 
         });
-      }
-      componentWillUnmount() {
+    }
+
+    componentWillUnmount() {
           this.unlisten();
-      }
+    }
 
     handleClick(){
         this.setState({
@@ -73,17 +74,36 @@ class Nav extends Component{
 
     menuItemClicked(){
 
-        $('#animation-container').fadeIn('slow',()=>{
-            $('#animation-container').addClass('flex')
-            document.getElementsByTagName('html')[0].setAttribute("style", "overflow-y:hidden;");
-            
-            setTimeout(function(){
-                $('#animation-container').fadeOut('fast',()=>{
-                    $('#animation-container').removeClass('flex')
-                    document.getElementsByTagName('html')[0].setAttribute("style", "overflow-y:auto;");
-                })
-            },100)
-          })
+        //determine if destination route is the sasme as current route
+        const history = this.props.location.pathname
+        const currentRoute = this.props.history
+        let changedRoute = false
+        console.log('current:',currentRoute.location.pathname)
+        console.log('history:',history)
+
+        //determine if a new route has been accessed
+        if(history!==currentRoute.location.pathname){
+            changedRoute = true
+        }
+
+        const playAnimation = changedRoute?true:false
+        
+        if(playAnimation){
+            $('#animation-container').fadeIn('slow',()=>{
+                $('#animation-container').addClass('flex')
+                document.getElementsByTagName('html')[0].setAttribute("style", "overflow-y:hidden;");
+                
+                setTimeout(function(){
+                    $('#animation-container').fadeOut('fast',()=>{
+                        $('#animation-container').removeClass('flex')
+                        document.getElementsByTagName('html')[0].setAttribute("style", "overflow-y:auto;");
+                    })
+                },100)
+            })
+        }        
+        
+
+
         this.handleClick()
         
           
