@@ -162,8 +162,8 @@ class Nav extends Component{
             <div id="vanilla-nav-container">
                 {/* <ul id="navbar-list"> */}
                 <div className="vanilla-children" onClick={this.menuItemClicked}><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/home"}><p>HOME</p></NavLink></div>
-                <div className="vanilla-children" onClick={this.menuItemClicked}><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/booking"}><p>BOOKING</p></NavLink></div>
                 <div className="vanilla-children" onClick={this.menuItemClicked}><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/about"}><p>ABOUT</p></NavLink></div>
+                <div className="vanilla-children" onClick={this.menuItemClicked}><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/booking"}><p>BOOKING</p></NavLink></div>
                 <div className="vanilla-children" onClick={this.menuItemClicked}><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/portfolio"}><p>PORTFOLIO</p></NavLink></div>
                 <div className="vanilla-children" onClick={this.menuItemClicked}><NavLink activeClassName="activeRoute" className="Nav_Link" to={choice+"/contact"}><p>CONTACT</p></NavLink></div>
                 {/* </ul> */}

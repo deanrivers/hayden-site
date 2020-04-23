@@ -2,6 +2,10 @@
 import Image from './image'
 import React, { Component } from 'react'
 
+import imageP1 from '../assets/Porrtfolio/P1.JPG'
+import imageP2 from '../assets/Porrtfolio/P2.JPG'
+import imageP3 from '../assets/Porrtfolio/P3.JPG'
+
 
 class Gallery extends Component{
     
@@ -10,33 +14,38 @@ class Gallery extends Component{
 
         this.state = {
             imagePaths:[
-                'https://data.whicdn.com/images/327014997/original.jpg?t=1550766960',
-                'https://data.whicdn.com/images/327014997/original.jpg?t=1550766960',
-                'https://data.whicdn.com/images/327014997/original.jpg?t=1550766960',
-                'https://data.whicdn.com/images/327014997/original.jpg?t=1550766960',
-                'https://data.whicdn.com/images/327014997/original.jpg?t=1550766960',
-                'https://data.whicdn.com/images/327014997/original.jpg?t=1550766960',
+                imageP1,
+                imageP2,
+                imageP3,
+                imageP2,
+                imageP3,
+                imageP1,
             ]
         }
     }
 
     render(){
-        return(
+        return([
             
-
-            
+            <div id="events-header">
+                <h1>EVENTS</h1>
+            </div>,
+    
             <div id="gallery-main-container">
-                <h1>REAL CONTENT<span className="orange-text">.</span></h1>
-                <h1><span className="orange-text">REAL EVIDENCE</span>.</h1>
+                
+                
                 {this.state.imagePaths.map( (item,index)=>{
                     
                     return(
-                        <Image key={index} src={this.state.imagePaths[index]} alt={index}/>
+                        <div className="gallery-children" key={index}>
+                            <Image src={this.state.imagePaths[index]} alt={index}/>
+                        </div>
+                        
                     )
                 })}
             </div>
             
-        )
+            ])
     }
 }
 
