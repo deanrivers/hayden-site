@@ -40,7 +40,7 @@ let Header = ()=>{
                 </div>
             </FadeIn>,
             <div id="about-parent-container">
-                {/* <VideoHero/> */}
+                <VideoHero/>
                 
                 <SocialCounter/>
                 <hr/>

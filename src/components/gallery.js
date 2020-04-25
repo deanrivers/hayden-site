@@ -20,6 +20,9 @@ class Gallery extends Component{
                 imageP2,
                 imageP3,
                 imageP1,
+                imageP3,
+                imageP1,
+                imageP2,
             ]
         }
     }
